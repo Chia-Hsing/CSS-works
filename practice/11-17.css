@@ -1,0 +1,77 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background:url("https://picsum.photos/800/600?random=10") no-repeat center center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 600px;
+    background-color: hsla(0, 0%, 0%, .4);
+    border: 2px solid #fff;
+    border-radius: 20px;
+    box-shadow: 5px 8px 20px #000;
+    backdrop-filter: url(commonfilters.svg#filter);
+}
+
+.form {
+    width: 400px;
+    color: #fff;
+    
+}
+
+.form h2 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form h2::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    left: 0px;
+    bottom: -10px;
+    background-color: #fff;
+} 
+
+.form input {
+    width: 100%;
+    border: 1px solid #aaa;
+    line-height: 2;
+    border-radius: 5px;
+}
+
+.form label {
+    line-height: 2;
+}
+
+.form .group {
+    margin-bottom: 20px;
+}
+
+.form .btn-group {
+    font-size: 0;
+    margin-top: 50px;
+} 
+
+.form .btn {
+    font-size: 20px;
+    border-radius: 5px;
+    width: 190px;
+    border:none;
+    padding: 10px 0;
+}
+
+.form .btn:first-child {
+    margin-right: 20px;
+}

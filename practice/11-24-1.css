@@ -1,0 +1,38 @@
+body {
+    background-color: #000;
+}
+
+
+.wrap {
+    width: 100%;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.container h1 {
+    width: 100%;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    font-size: 90px;
+    color: #a00;
+}
+
+ 
+.container .txt { 
+    box-sizing: border-box;
+    padding: 15px;
+    color: #fff;
+}
+
+.container .txt p {
+    margin-bottom: 1.2em;
+}
+
+.container .txt p:first-child::first-letter {
+    font-size: 40px;
+    padding-right: 15px;
+} 

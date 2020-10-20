@@ -1,0 +1,87 @@
+html,body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    background-color: #f8f8e4;
+}
+
+
+.wrap {
+    display: flex;
+    width: 1200px;
+    margin: auto;
+}
+
+.item {
+    width: 368px;
+    margin: 15px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #888888;
+    transform: translateY(0%);
+    transition: .3s;
+}
+
+.item img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.item .txt {
+    padding: 20px;
+    position: relative;
+}
+
+.item:hover {
+    transform: translateY(-5%);
+}
+
+.item:hover .txt:before {
+    border-left: 184px solid #feb85d;
+    border-right: 184px solid #feb85d;
+}
+
+.item:hover .txt {
+    background: linear-gradient(0deg, #fb8076,#feb85d);    
+}
+
+.item .txt:before {
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 184px solid #ffffff;
+    border-right: 184px solid #ffffff;
+    left: 0;
+    top: 0;
+    right: 0;
+    transform: translateY(-100%);
+}
+
+.item h2 {
+    border-bottom: 2px solid #888888;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    transition: .4s;
+}
+
+.item p {
+    line-height: 1.6;
+    font-family: 'Ubuntu', sans-serif;
+    transition: .4s;
+}
+
+.item:hover h2 {
+    color: #ffffff;
+}
+
+.item:hover p {
+    color: #ffffff;    
+}

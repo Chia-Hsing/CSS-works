@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=McLaren&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+* {
+    font-family: 'McLaren', cursive;
+}
+
+.wrap {
+    display: flex;
+    width: 1200px;
+    margin: 100px auto;
+    /* background-color: #aaaaaa; */
+    padding-top: 75px;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+}
+
+.item {
+    width: 370px;
+    padding: 0 15px;
+    text-align: center;
+    background-color: #fff;
+    border: 10px solid hsl(350, 70%, 70%);
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px hsl(350, 40%, 70%);;
+}
+
+.item .txt {
+    padding: 40PX;
+}
+
+.item .icon {
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    margin: -75px auto 0 ;
+    font-size: 60px;
+    line-height: 150px;
+    border-radius: 200px;
+    position: relative;
+}
+
+.item .icon:before {
+    content:"";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 10px solid hsl(350, 70%, 70%);
+    top: -10px;
+    left: -10px;
+    border-top: 10px solid hsl(350, 70%, 70%);
+    border-right: 10px solid hsl(350, 70%, 70%) ;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-radius: 200px;
+    transform: rotate(-45deg);
+    cursor: pointer;
+}
+
+.item:hover .fa {
+    animation: ss .2s linear infinite alternate; 
+}
+
+.item h3 {
+    color: hsl(320,20%,65%);
+    border-bottom: 1.5px solid #aaa;
+    padding: 10px;
+}
+
+.item p {
+    color: hsl(30, 10%, 50%);
+    margin-bottom: 30px;
+}
+
+@keyframes ss{
+      0%{transform: rotate(-10deg); }
+    100%{transform: rotate(10deg); }
+}
+

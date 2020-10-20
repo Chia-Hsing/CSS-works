@@ -1,0 +1,38 @@
+.container {
+    width: 1200px;
+    margin: auto;
+    /* display: flex; */
+    padding: 100px 0;
+}
+
+.container h1 {
+    
+    width: 300px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px;
+    border-right: 2px solid #000;
+    float: left;
+    margin-right: 1em;
+    /* background-color: #f9f931; */
+}
+
+/* .container h1::after {
+    content:'';
+    display: block;
+    width: 4em;
+    height: 4px;
+    background-color: #000000;
+    margin-left: auto;
+} */
+
+.container .txt {
+    /* width: 800px; */
+    box-sizing: border-box;
+    padding: 0 15px;
+    /* column-count: 2;
+    column-gap: 30px; */
+}
+

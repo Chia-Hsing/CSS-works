@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
+
+
+.main-footer {
+    padding: 150px 0;
+    background: linear-gradient(15deg, hsl(240, 50%, 80%), hsl(220, 80%, 70%), hsl(180, 65%, 60%));
+}
+
+.main-footer .container {
+    width: 1200px;
+    display: flex;
+    margin: 50px auto;
+}
+
+.footer-item {
+    width: 0;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+
+.footer-item nav {
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.footer-item h4 {
+    font-size: 1.5em;
+    color: #fff;
+    border-bottom: 1px dotted #fff;
+    margin-bottom: .5em;
+    padding-bottom: .5em;
+}
+
+.footer-item nav a {
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 1.4em;
+    text-decoration: none;
+    color: hsl(240,90%,90%);
+    padding: 5px 0;
+}
+
+.footer-item nav a:hover {
+    color:#ecf022
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: hsl(210,35%,60%);
+}
+
+.footer-subs {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-subs form {
+    display: flex;
+    width: 100%;
+    margin: auto 0;
+}
+
+.footer-subs input[type="text"],
+.footer-subs input[type="submit"] {    
+    border:none;
+    padding: 5px 10px;
+} 
+
+.footer-subs input[type="text"] {
+    width: 0;
+    flex-grow: 1;
+}
+.footer-subs input[type="submit"] {
+    color: rgb(184, 204, 240);
+    background-color: #053d68;
+}

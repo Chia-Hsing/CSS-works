@@ -1,0 +1,66 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(90deg, #389298, #928f);
+}
+
+.table {
+    width: 800px;
+    margin: auto;
+}
+
+.table thead {
+    background: #333;
+    color: #fff ;
+}
+
+.table table {
+    width: 100%;
+    border: 3px double #666;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #9d9d;
+}
+
+.table thead th:first-child {
+    border-radius: 7px 0 0 0;
+}
+
+.table tbody td:hover {
+    background-color: #1ad;
+}
+
+.table thead th:last-child {
+    border-radius: 0 7px 0 0;
+}
+
+.table tfoot th:first-child {
+    border-radius: 0 0 0 7px;
+}
+
+.table tfoot th:last-child {
+    border-radius: 0 0 7px 0;
+}
+
+.table th {
+    border: 1px solid #666;
+    padding: 6px 10px;;    
+}
+
+.table td {
+    border: 1px solid #666;
+    padding: 6px 10px;;
+}
+
+.table caption {
+    caption-side: bottom;
+    text-align: right;
+    padding: 10px 0;
+}

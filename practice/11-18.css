@@ -1,0 +1,83 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dialogue {
+    width: 500px;
+    padding: 20px;
+    box-shadow: 5px 2px 5px #000;
+    background-color: hsla(190,50%,70%,.5);
+}
+
+.user {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.user .avatar {
+    width: 60px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.user .pic {
+    border-radius: 80%;
+    overflow: hidden;
+
+}
+
+.user .pic img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.user .txt {
+    border-radius: 10px;
+    position: relative;
+}
+
+.remote .txt {
+    margin-left: 20px;
+    margin-right: 80px;
+    padding: 10px;
+    background-color: #fff;
+    color: hsl(200,10%,50%);
+}
+
+.local {
+    justify-content: flex-end;
+}
+
+.local .txt {
+    margin-left: 80px;
+    margin-right: 20px;
+    padding: 10px;
+    order: -1;
+    background-color: hsl(200,30%,50%);
+    color: #fff;
+}
+
+.remote .txt::before, 
+.local .txt::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+}
+
+.remote .txt::before {
+    border-right: 20px solid #fff;
+    left: -10px;
+}
+.local .txt::before {
+    border-left: 20px solid hsl(200,30%,50%);
+    right: -10px;
+}

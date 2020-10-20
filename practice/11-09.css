@@ -1,0 +1,80 @@
+.main-header {
+    width: 100%;
+    background: linear-gradient(20deg, hsl(180, 20%,60%), hsl(100,20%,70%));
+}
+
+.main-header .container {
+    display: flex;
+    padding: 20px;
+    width: 1200px;
+    margin: auto;
+    align-items: center;
+}
+
+.main-header .logo {
+    width: 100px;
+
+}
+
+.main-header .logo img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.main-header .main-nav {
+    margin: auto;
+    display: flex;
+    
+}
+
+.main-header .main-nav a {
+    text-decoration: none;
+    color: rgb(234, 236, 133);
+    font-weight: 600;
+    padding: 5px 1em;
+    position: relative;
+    transform: translateY(0px);
+    transition: .2s;
+}
+
+.main-header .main-nav a:hover {
+    transform: translateY(-5px);
+}
+
+.main-header .main-nav a:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: -5px;
+    height: 0;
+    border-bottom: 1px solid #fff;
+    transition: .3s;
+}
+
+.main-header .main-nav a:hover:after {
+    left: 0%;
+    right: 0%;
+}
+
+.main-header .header-search {
+    display: flex;
+}
+.main-header .header-search input,
+.main-header .header-search button {
+    border: none;
+    background-color: #ffffff;
+    padding: 5px 10px;
+}
+
+.main-header .header-search input:focus,
+.main-header .header-search button:focus {
+    outline: none;
+}
+
+.main-header .header-search input {
+    border-radius: 200px 0 0 200px;
+}
+.main-header .header-search button {
+    border-radius: 0 200px 200px 0;
+} 

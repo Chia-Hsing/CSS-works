@@ -1,0 +1,130 @@
+.wrap {
+    width: 100%;
+    height: auto;
+    background: url("https://picsum.photos/id/199/1200/600") center top / 100% auto no-repeat;
+}
+
+.bcc {
+    background-color:hsl(210,40%,35%);
+    width: 100%;
+    position: relative;
+    top: 300px;
+    border-top: 10px solid #000;
+}
+
+.container {
+    width: 600px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px 50px;
+    border-top: 10px solid hsl(10,65%,50%);
+    position: relative;
+    top: -100px;
+}
+
+.container .title {
+    margin: 30px 0 40px;
+}
+
+.container .title h1 {
+    font-weight: 400;
+}
+
+.container .title a {
+    text-decoration: none;
+}
+
+.container .title p {
+    width: 500px;
+    font-size: .8em;
+    position: relative;
+}
+
+.container .title p::after {
+    content:"＊必填";
+    color:red;
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+
+.container .email,
+.container .name,
+.container .occupation,
+.container .plan,
+.container .registion-type,
+.container .background,
+.container .finalquestion {
+    margin: 10px 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container .email h2,
+.container .name h2,
+.container .occupation h2,
+.container .plan h2,
+.container .registion-type h2,
+.container .background h2,
+.container .finalquestion h2 {
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.container .email h2::after,
+.container .name h2::after,
+.container .occupation h2::after,
+.container .registion-type h2::after,
+.container .plan h2::after,
+.container .background h2::after {
+    content:" *";
+    color: red;
+}
+
+.container .email input,
+.container .name input,
+.container .occupation input,
+.container .plan input,
+.container .background input,
+.container .finalquestion input {
+    border:none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0; 
+    outline: none;
+    width: 300px;
+}
+
+.container .name p:first-of-type,
+.container .occupation p:first-of-type,
+.container .background p:first-of-type,
+.container .finalquestion p:first-of-type  {
+    font-size: .8em;
+}
+
+.container .prompt {
+    display: none;
+}
+
+.required p:last-of-type {
+    color: red;
+    font-size: .8em;
+}
+
+.container .submit input {
+    background-color: blue;
+    color: #fff;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.container .submit div {
+    font-size: .5em;
+}
+
+.red {
+    background-color: hsl(1,60%,90%);
+}
